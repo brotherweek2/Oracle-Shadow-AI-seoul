@@ -428,6 +428,24 @@ def save_csv(m5060, dong_master):
     return output
 
 
+def save_components(m5060, dong_master):
+    """Dependency 5개 구성요소(정규화값) + Dependency 저장 — 의존축 분해용 (행정동 단위).
+    save_csv 와 동일한 행정동코드(adm_cd8) 키로 export → dependency_index.csv 와 1:1 매칭."""
+    dong_map = dong_master[["telecom_cd", "자치구", "행정동", "adm_cd8"]].drop_duplicates()
+    comp_cols = ["A_인프라", "B_외출커뮤적은", "C_배달의존", "D_이동저하", "E_독거비율"]
+    out = m5060[["행정동코드"] + comp_cols + ["Dependency"]].merge(
+        dong_map.rename(columns={"telecom_cd": "행정동코드"}),
+        on="행정동코드", how="left",
+    )
+    out = out[["자치구", "행정동", "adm_cd8"] + comp_cols + ["Dependency"]]
+    out = out.rename(columns={"adm_cd8": "행정동코드"})
+    out = out.sort_values("Dependency", ascending=False).reset_index(drop=True)
+    path = OUT / "dependency_components.csv"
+    out.to_csv(path, index=False, encoding="utf-8-sig")
+    print(f"\n  구성요소 저장: {path} ({len(out)}행)  [가중치: {W}]")
+    return out
+
+
 def save_methodology(sp_df, partial_df, fisher_df):
     """산출 방법 메모 (기존 방법론 반영)."""
     # 핵심 수치 추출
@@ -609,6 +627,7 @@ def main():
     # [9] 산출물 저장
     print("\n── 산출물 저장 ──")
     save_csv(m5060, dong_master)
+    save_components(m5060, dong_master)   # ★ 의존축 분해용 구성요소 추가 export
     save_methodology(sp_df, partial_df, fisher_df)
     save_validation(top10, overlap, m5060, sp_df, partial_df, fisher_df)
 
