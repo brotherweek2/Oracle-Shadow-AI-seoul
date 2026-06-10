@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-streamlit_test.py — 처방 엔진(shadow_rag_llm) 작동 확인용 '미니' 대시보드.
+streamlit_test.py — 처방 엔진(shadow_rag_llm) 작동 확인용 '미니' 대시보드. (처방 전용)
 
-목적:
-  · 내 엔진이 streamlit 화면에서 잘 도는지 눈으로 확인
-  · 친구가 진짜 대시보드(shadow_service.py)에 연결할 때 "이렇게 쓰면 된다"는 살아있는 예시
-  · '처방 시작' 버튼 → 진단 즉시 표시(무료) → 처방문 실시간 타이핑(OpenAI 스트리밍)
+'처방 시작' 버튼 → 진단 즉시 표시(무료) → 처방문 실시간 타이핑(OpenAI 스트리밍).
+친구가 본 대시보드(shadow_service.py)에 "이렇게 쓰면 된다"는 작동 예시.
+(챗봇은 별도 파일: streamlit_chat_test.py)
 
-실행:
-  streamlit run streamlit_test.py
-  (.env 와 wallet/ 가 같은 폴더에 있어야 함)
+실행: streamlit run streamlit_test.py   (.env 와 wallet/ 가 같은 폴더에 있어야 함)
 """
 import streamlit as st
 from shadow_rag_llm import get_prescription, stream_prescription
@@ -32,7 +29,7 @@ if st.button("처방 시작", type="primary"):
         r = get_prescription(gu, generate_text=False)
 
     if r["에러"]:
-        st.error(r["에러"])           # 자치구 오타·접속 실패 등 → 화면 안 깨짐
+        st.error(r["에러"])
         st.stop()
 
     p = r["사실"]
@@ -59,10 +56,9 @@ if st.button("처방 시작", type="primary"):
         seen = set()
         for d in p["진단"]:
             for e in d["근거_논문"]:
-                key = e["evidence_id"]
-                if key in seen:
+                if e["evidence_id"] in seen:
                     continue
-                seen.add(key)
+                seen.add(e["evidence_id"])
                 st.write(f"- ({e.get('authors','')}, {e.get('year','')}) {e['title']}")
         st.markdown("**이식 후보 제도**")
         any_cand = False
