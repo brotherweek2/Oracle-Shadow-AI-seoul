@@ -1,0 +1,675 @@
+{
+  "선택_자치구": "노원구",
+  "대상": "서울 5060 남성 1인가구",
+  "지역_프로파일": {
+    "quadrant": "Q4",
+    "quadrant_민감낙인": [
+      "대면노출",
+      "공개노출",
+      "수혜정체성"
+    ],
+    "quadrant_취약의존": [],
+    "회피점수": 100.0,
+    "의존점수": 16.105328961077436,
+    "회피_주동인": [
+      "외로움부정",
+      "도움부재",
+      "네트워크축소"
+    ],
+    "의존_주동인": [
+      "배달의존",
+      "인프라",
+      "이동저하"
+    ],
+    "고위험_행정동": [
+      {
+        "행정동": "상계2동",
+        "위험등급": "최고위험",
+        "주요위험요인": "최근인프라"
+      },
+      {
+        "행정동": "공릉1동",
+        "위험등급": "고위험",
+        "주요위험요인": "최근인프라"
+      }
+    ]
+  },
+  "현행_제도": [
+    {
+      "program_id": "P-0641",
+      "name": "1인가구 건강캠페인 '헬시플레저'",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-0642",
+      "name": "1인가구 공통프로그램 '슬기로운 1인생활' 참여자 모집",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0643",
+      "name": "1인가구 공통프로그램(경제교육) 참여자 모집",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0644",
+      "name": "1인가구 공통프로그램(관계증진-자기돌봄) 참여자 모집",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0645",
+      "name": "1인가구 관계향상 프로그램",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0646",
+      "name": "1인가구 독립생활능력 프로그램 '나의 작은 정원'",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-0647",
+      "name": "1인가구 독립생활능력프로그램 '중장년기-내 집, 제대로 알고 구하기'",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0649",
+      "name": "1인가구 독서 커뮤니티 프로그램 '노원프렌즈2기' 참여자 모집",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0650",
+      "name": "1인가구 환경캠페인 '에코싱글즈' 참여하실분을 모집합니다!",
+      "fulfills_needs": [
+        "NEED_NoStigma"
+      ]
+    },
+    {
+      "program_id": "P-0651",
+      "name": "[1인가구] 독립생활능력 프로그램 '오감힐링'",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-0652",
+      "name": "[1인가구] 환경캠페인 '에코싱글즈 4기'",
+      "fulfills_needs": [
+        "NEED_NoStigma"
+      ]
+    },
+    {
+      "program_id": "P-0653",
+      "name": "★★1인가구 공통프로그램(관계증진-자기돌봄) 참여자 추가 모집★★",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0654",
+      "name": "★개인신청★ 사회적관계망 프로그램 '1인가구 하고 싶은 거 다 해'",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0655",
+      "name": "★단체신청★ 사회적관계망 프로그램 '1인가구 하고 싶은 거 다 해'",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0657",
+      "name": "★추가모집★ 사회적관계망 프로그램",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0658",
+      "name": "★추가모집★ 사회적관계망 프로그램 '1인가구 하고 싶은 거 다 해!'",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0659",
+      "name": "★추가모집★ 예비 중장년 야외 및 문화과학체험 프로그램 '대문밖 친구들 1기'",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0660",
+      "name": "★추가모집★ 환경캠페인 '에코싱글즈 2기'",
+      "fulfills_needs": [
+        "NEED_NoStigma"
+      ]
+    },
+    {
+      "program_id": "P-0661",
+      "name": "★추가모집★독립생활능력 프로그램 '1인1색'",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-0662",
+      "name": "관계향상 프로그램 '소소한 만남' 참여자 모집",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0663",
+      "name": "독립생활 능력 프로그램",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-0664",
+      "name": "독립생활능력 프로그램 '1인1색'",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-0665",
+      "name": "독립생활능력 프로그램 '오감힐링'",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-0666",
+      "name": "독립생활능력 프로그램 '초보탈출, 전세 안내서'",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0667",
+      "name": "독립생활능력 프로그램 '초보탈출, 전세 안내서'  PART 2. 전세사기",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0668",
+      "name": "독립생활능력 프로그램 전세사기 주거교육 '초보탈출, 전세안내서'",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0669",
+      "name": "독서 커뮤니티프로그램 '노원프렌즈 2기' 중년 1인가구 참여자 모집",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0670",
+      "name": "독서 커뮤니티프로그램 '노원프렌즈 3기' 중장년 1인가구 참여자 모집",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0671",
+      "name": "독서 커뮤니티프로그램 '노원프렌즈 3기' 참여자 모집",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0672",
+      "name": "중장년 1인가구 야외 및 문화과학체험 '대문 밖 친구들' 참여자를 모집합니다!",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0673",
+      "name": "중장년 남성 1인가구 야외 및 문화과학체험 '대문 밖 친구들2기' 참여자를 모집합니다!",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0678",
+      "name": "혼밥탈출 '삼삼오오' 1기",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0679",
+      "name": "환경캠페인 '에코싱글즈 2기'",
+      "fulfills_needs": [
+        "NEED_NoStigma"
+      ]
+    },
+    {
+      "program_id": "P-0680",
+      "name": "환경캠페인 '에코싱글즈 3기' 참여자 모집",
+      "fulfills_needs": [
+        "NEED_NoStigma"
+      ]
+    },
+    {
+      "program_id": "P-0966",
+      "name": "중장년 1인가구 소셜 다이닝 프로그램 행복한 밥상 1?2기 참여자 모집",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0967",
+      "name": "중장년 1인가구 소셜 다이닝 프로그램 행복한 밥상 1기 참여자 모집(연장모집)",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0968",
+      "name": "중장년 1인가구 소셜다이닝 [행복한밥상 5기-원팬밥상]",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-0969",
+      "name": "중장년 1인가구 소셜다이닝 [행복한밥상 특별-일주일 반찬가게]",
+      "fulfills_needs": [
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-1041",
+      "name": "1인가구 생활요리 교육(4월) - 1인가구 건강한 한 끼(가지덮밥, 닭고기타코)",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-1042",
+      "name": "1인가구 생활요리 교육(7월) - 1인가구 한 끼 식사도 건강하게(반미샌드위치, 강황파인애플볶음밥)",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-1043",
+      "name": "[서울시농업기술센터]1인가구 생활요리 교육(10월) - 1인가구 혈당 스파이크 관리(두부간장깐풍기, 사과병아리콩샐러드)",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-1044",
+      "name": "[서울시농업기술센터]1인가구 생활요리 교육(5월) - 1인가구 균형 잡힌 식사(파로리조또, 부추무침)",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-1045",
+      "name": "[서울시농업기술센터]1인가구 생활요리 교육(6월) - 1인가구 안전한 식품(해초국수, 떡갈비)",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-1046",
+      "name": "[서울시농업기술센터]1인가구 생활요리 교육(8월) - 1인가구 균형 잡힌 쉬운요리(버섯고추잡채, 토마토겉절이)",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-1047",
+      "name": "[서울시농업기술센터]1인가구 생활요리 교육(9월) - 1인가구 건강하고 안전한 야식(오꼬노미야끼, 건두부들기름막국수)",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-1048",
+      "name": "[서울시립미술관]SeMA 도슨트 토크토크",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-1049",
+      "name": "[외로움 없는 서울 X 교보문고] 마음여행 독서챌린지",
+      "fulfills_needs": [
+        "NEED_NoStigma"
+      ]
+    },
+    {
+      "program_id": "P-1050",
+      "name": "[외로움 없는 서울 × 교보문고] 마음여행 독서챌린지",
+      "fulfills_needs": [
+        "NEED_NoStigma"
+      ]
+    },
+    {
+      "program_id": "P-1051",
+      "name": "날씨도 좋은데 집에 있기에 너무 심심하다면, <한강 보물찾기런>",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-1052",
+      "name": "[서울시평생교육진흥원]서울 동행 인문학 사업소개 및 모집홍보",
+      "fulfills_needs": []
+    },
+    {
+      "program_id": "P-1864",
+      "name": "그림책 테라피와 내면 글쓰기 (외로움 누구나)",
+      "fulfills_needs": [
+        "NEED_NoStigma",
+        "NEED_RelationRestore"
+      ]
+    },
+    {
+      "program_id": "P-1865",
+      "name": "2030청년과 50+ 시니어 그림책 테라피·내면 글쓰기",
+      "fulfills_needs": [
+        "NEED_NoStigma",
+        "NEED_RelationRestore"
+      ]
+    }
+  ],
+  "진단": [
+    {
+      "한계": "낙인충돌",
+      "원인_제도": [
+        {
+          "program_id": "P-0641",
+          "name": "1인가구 건강캠페인 '헬시플레저'",
+          "stimulates_stigma": [
+            "STG_FaceExposure"
+          ]
+        },
+        {
+          "program_id": "P-0642",
+          "name": "1인가구 공통프로그램 '슬기로운 1인생활' 참여자 모집",
+          "stimulates_stigma": [
+            "STG_FaceExposure"
+          ]
+        },
+        {
+          "program_id": "P-0643",
+          "name": "1인가구 공통프로그램(경제교육) 참여자 모집",
+          "stimulates_stigma": [
+            "STG_FaceExposure"
+          ]
+        },
+        {
+          "program_id": "P-0644",
+          "name": "1인가구 공통프로그램(관계증진-자기돌봄) 참여자 모집",
+          "stimulates_stigma": [
+            "STG_FaceExposure"
+          ]
+        },
+        {
+          "program_id": "P-0645",
+          "name": "1인가구 관계향상 프로그램",
+          "stimulates_stigma": [
+            "STG_FaceExposure"
+          ]
+        },
+        {
+          "program_id": "P-0646",
+          "name": "1인가구 독립생활능력 프로그램 '나의 작은 정원'",
+          "stimulates_stigma": [
+            "STG_FaceExposure"
+          ]
+        },
+        {
+          "program_id": "P-0647",
+          "name": "1인가구 독립생활능력프로그램 '중장년기-내 집, 제대로 알고 구하기'",
+          "stimulates_stigma": [
+            "STG_FaceExposure"
+          ]
+        },
+        {
+          "program_id": "P-0648",
+          "name": "1인가구 독립생활능력프로그램 '청년기-내 집 찾기 생존 가이드(feat.전세사기)'",
+          "stimulates_stigma": [
+            "STG_FaceExposure"
+          ]
+        }
+      ],
+      "원인_제도_총수": 49,
+      "need": {
+        "id": "NEED_NoStigma",
+        "name": "무낙인",
+        "def": "낙인 자극 없는 전달방식"
+      },
+      "근거_논문": [
+        {
+          "evidence_id": "E-057",
+          "title": "한국판 중년 남성의 전문적 도움 추구 방해물 척도 타당화 연구",
+          "authors": "이해승·김은하",
+          "year": 2024,
+          "scope": "국내문헌",
+          "key_finding": "40~64세 한국 남성 488명을 대상으로 도움추구 장벽을 5요인(강한 모습 유지, 사생활·감정 노출 기피, 자율성 욕구, 경제적 장벽, 문제 최소화·체념)으로 구조화하고 성역할갈등·자기낙인과의 상관을 확인했다.",
+          "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003084180",
+          "_relevance": 1
+        },
+        {
+          "evidence_id": "E-052",
+          "title": "코로나19 상황에서 디지털 플랫폼을 활용한 노인 대상 사회적 처방 시범사업의 효과평가",
+          "authors": "윤혜진·김혜경·임주애·김지언·홍은비·손창우·진기남·정형선·최진희·남은우",
+          "year": 2022,
+          "scope": "국내문헌",
+          "key_finding": "코로나 시기 디지털 플랫폼 기반 노인 사회적처방 시범사업을 통제군 비교로 평가한 결과, 실험군의 사회적지지·생활만족도가 유의하게 오르고 우울이 유의하게 감소했다(인지기능은 변화 없음).",
+          "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002846753",
+          "_relevance": 1
+        },
+        {
+          "evidence_id": "E-059",
+          "title": "한국 대기업 중년 남성 임원들의 비자발적 퇴직 이후 적응과정 연구",
+          "authors": "구자복·정태연",
+          "year": 2020,
+          "scope": "국내문헌",
+          "key_finding": "비자발적으로 퇴직한 중년 남성 임원을 심층면접한 근거이론 연구로, 퇴직이 '임원 정체성 vs 평범한 은퇴자 현실'의 근본 충돌을 일으키며 현실 수용→재평가→정체성 재정립의 적응단계를 거침을 보였다.",
+          "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002649926",
+          "_relevance": 1
+        },
+        {
+          "evidence_id": "E-071",
+          "title": "남성 성역할갈등과 전문적 도움추구 태도: 우울과 자기노출 예상위험의 순차매개효과",
+          "authors": "변지영·김선경",
+          "year": 2019,
+          "scope": "국내문헌",
+          "key_finding": "30~59세 남성 344명을 분석해 남성 성역할갈등이 우울과 자기노출 예상위험을 순차매개로 거쳐 전문적 도움추구 태도를 낮춤을 확인했다. 즉 전통적 남성 역할 고수→우울→자기노출 우려 증가→도움추구 개방성 저하의 경로가 유의했다.",
+          "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002485593",
+          "_relevance": 1
+        }
+      ]
+    },
+    {
+      "한계": "자치구귀속",
+      "원인_제도": [
+        {
+          "program_id": "P-0641",
+          "name": "1인가구 건강캠페인 '헬시플레저'",
+          "regions": [
+            "노원구"
+          ]
+        },
+        {
+          "program_id": "P-0642",
+          "name": "1인가구 공통프로그램 '슬기로운 1인생활' 참여자 모집",
+          "regions": [
+            "노원구"
+          ]
+        },
+        {
+          "program_id": "P-0643",
+          "name": "1인가구 공통프로그램(경제교육) 참여자 모집",
+          "regions": [
+            "노원구"
+          ]
+        },
+        {
+          "program_id": "P-0644",
+          "name": "1인가구 공통프로그램(관계증진-자기돌봄) 참여자 모집",
+          "regions": [
+            "노원구"
+          ]
+        },
+        {
+          "program_id": "P-0645",
+          "name": "1인가구 관계향상 프로그램",
+          "regions": [
+            "노원구"
+          ]
+        },
+        {
+          "program_id": "P-0646",
+          "name": "1인가구 독립생활능력 프로그램 '나의 작은 정원'",
+          "regions": [
+            "노원구"
+          ]
+        },
+        {
+          "program_id": "P-0647",
+          "name": "1인가구 독립생활능력프로그램 '중장년기-내 집, 제대로 알고 구하기'",
+          "regions": [
+            "노원구"
+          ]
+        },
+        {
+          "program_id": "P-0648",
+          "name": "1인가구 독립생활능력프로그램 '청년기-내 집 찾기 생존 가이드(feat.전세사기)'",
+          "regions": [
+            "노원구"
+          ]
+        }
+      ],
+      "원인_제도_총수": 44,
+      "need": {
+        "id": "NEED_Transferable",
+        "name": "이식가능",
+        "def": "특정 자치구에 묶이지 않고 이식 가능"
+      },
+      "근거_논문": [
+        {
+          "evidence_id": "E-054",
+          "title": "한국과 캐나다의 사회적처방 시범사업 평가 (Capacity Mapping Tool)",
+          "authors": "남해권·임수빈·이상민·이유림",
+          "year": 2020,
+          "scope": "국내문헌",
+          "key_finding": "한국과 캐나다의 사회적처방 시범사업을 비교한 결과 양국 모두 복합처방·경험참여자의 자원봉사자 활용으로 외로움·우울 감소와 자기효능감 개선을 보였으나, 한국은 대학 주도에 머물러 국가 차원 제도화(복지부·공단 연계)가 필요하다고 제언했다.",
+          "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11202899",
+          "_relevance": 1
+        },
+        {
+          "evidence_id": "E-051",
+          "title": "서울시 '찾아가는 동주민센터' 1차년도 사업의 건강 영향 평가",
+          "authors": "허종호·윤난희·황서은·황종남",
+          "year": 2019,
+          "scope": "국내문헌",
+          "key_finding": "서울시 '찾아가는 동주민센터' 1차년도 사업을 65~70세 5,273명 대상 이중차분(DID)으로 평가했다. 사업지역의 흡연율이 5.7%p 감소하고 독거노인 저염식 실천이 22.7%p 개선됐으나, 초기 건강효과는 제한적이라 지속 평가를 권고했다.",
+          "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002486333",
+          "_relevance": 1
+        },
+        {
+          "evidence_id": "E-050",
+          "title": "서울시 고독사 위험계층 실태조사 연구",
+          "authors": "송인주·모은정 (서울시복지재단)",
+          "year": 2021,
+          "scope": "정부통계",
+          "key_finding": "서울시 고독사 위험계층 실태를 조사한 결과 위험계층의 65.7%가 남성, 50~64세 중장년이 34.6%로 가장 높은 위험을 보였다. 실패·상실감 누적, 고립적 일상, 이동성 높은 생애, 공적서비스 단절 등을 위험 발굴 기준으로 제시했다.",
+          "url": "https://wish.welfare.seoul.kr/swflmsfront/board/boardr.do?bmno=10015&opno=10005&bno=94004",
+          "_relevance": 1
+        },
+        {
+          "evidence_id": "E-055",
+          "title": "지역사회 노인 외로움 감소 개입: 자원봉사자와 친구맺기 (대만)",
+          "authors": "Hsu, H.-C., Chang, S.-C., Liang, C.-Y., Ting, J.-R.",
+          "year": 2024,
+          "scope": "해외문헌",
+          "key_finding": "대만 8개 지역조직의 자원봉사자 3개월 가정방문 '친구맺기' 개입을 평가한 결과, 외로움 리터러시는 유의하게 개선(38.9→42.0)됐으나 외로움 자체의 감소효과는 공변량 통제 시 제한적이었다.",
+          "url": "https://doi.org/10.1111/ggi.14828",
+          "_relevance": 1
+        }
+      ]
+    }
+  ],
+  "이식후보": [
+    {
+      "need_id": "NEED_NoStigma",
+      "candidates": [
+        {
+          "program_id": "GG-0367",
+          "name": "독일 연방정부 외로움 대응 전략 (Strategie der Bundesregierung gegen Einsamkeit)",
+          "regions": [
+            "독일"
+          ],
+          "region_scope": "국가",
+          "reference_priority": "해외",
+          "rationale": "'낙인 해소'를 명시적 국가목표로 박고 정책-측정-개선 루프를 제도화한 모델.",
+          "status": "운영중",
+          "evidence_ids": []
+        },
+        {
+          "program_id": "GG-0368",
+          "name": "스웨덴 외로움 대응 국가전략 '함께 선다' (Standing together — A national strategy to tackle loneliness)",
+          "regions": [
+            "스웨덴"
+          ],
+          "region_scope": "국가",
+          "reference_priority": "해외",
+          "rationale": "노인 1인가구 비율 세계 최고 수준 국가의 최신 전략, '장기 고립자 지원' 목표가 핵심 타깃과 일치.",
+          "status": "운영중",
+          "evidence_ids": []
+        },
+        {
+          "program_id": "GG-0369",
+          "name": "연결된 스코틀랜드 (고립·외로움 국가전략) (A Connected Scotland)",
+          "regions": [
+            "영국(스코틀랜드)"
+          ],
+          "region_scope": "국가",
+          "reference_priority": "해외",
+          "rationale": "낙인해소와 지역 공동소유를 우선순위로 둔 풀뿌리 중심 설계.",
+          "status": "운영중",
+          "evidence_ids": []
+        },
+        {
+          "program_id": "GG-0110",
+          "name": "2025년 1인가구 지원사업 '청년층 금융안전교육' 대상자 모집",
+          "regions": [
+            "동두천시"
+          ],
+          "region_scope": "국내지역",
+          "reference_priority": "국내타지역",
+          "rationale": "비대면 금융교육과 재무 상담으로 재무 자립을 돕는다.",
+          "status": "종료",
+          "evidence_ids": []
+        },
+        {
+          "program_id": "GG-0154",
+          "name": "[금융안전 교육] 돈, 워리 1기_청년편",
+          "regions": [
+            "안성시"
+          ],
+          "region_scope": "국내지역",
+          "reference_priority": "국내타지역",
+          "rationale": "비대면 금융교육으로 재무 자립을 돕는다.",
+          "status": "운영중",
+          "evidence_ids": []
+        },
+        {
+          "program_id": "GG-0155",
+          "name": "[금융안전 교육] 머니토닥 2기 중장년편",
+          "regions": [
+            "안성시"
+          ],
+          "region_scope": "국내지역",
+          "reference_priority": "국내타지역",
+          "rationale": "비대면 금융교육으로 재무 자립을 돕는다.",
+          "status": "종료",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "need_id": "NEED_Transferable",
+      "candidates": []
+    }
+  ],
+  "_note": "ontology 규칙으로 계산됨. LLM은 재판단 말고 ①~⑤ 서술만. 입력에 없는 제도·논문 인용 금지."
+}
