@@ -40,6 +40,13 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 load_dotenv(os.path.join(HERE, ".env"))
 WALLET_DIR = os.path.join(HERE, "wallet")
 
+# ── 로컬(오프라인) 모드 ── SHADOW_LOCAL=1 이면 ADB 대신 로컬 JSON 사용 ──
+USE_LOCAL = os.getenv("SHADOW_LOCAL") == "1"
+if USE_LOCAL:
+    if HERE not in sys.path:
+        sys.path.insert(0, HERE)
+    from local import local_store as _LS
+
 DEFAULT_MODEL = "gpt-4o"
 OK_AGE = {"중장년", "전연령"}
 OK_GENDER = {"무관", "남성"}
@@ -90,6 +97,8 @@ USER_TEMPLATE = "아래는 ADB 그래프가 계산한 [입력]이다. 이 재료
 
 # ── ADB 접속 ─────────────────────────────────────────────────
 def connect():
+    if USE_LOCAL:
+        return _LS.connect()
     return oracledb.connect(
         user=os.environ["DB_USER"], password=os.environ["DB_PASSWORD"],
         dsn=os.environ["DB_DSN"], config_dir=WALLET_DIR,
@@ -117,6 +126,8 @@ def _arr(v):
 
 # ── 사실 추출 (전부 ADB) ──────────────────────────────────────
 def load_rules_and_profile(cur):
+    if USE_LOCAL:
+        return _LS.load_rules_and_profile(cur)
     cur.execute("SELECT DATA FROM ONTOLOGY")
     ont = _as_json(cur.fetchone()[0])
     cur.execute("SELECT DATA FROM SHADOW_PROFILE")
@@ -126,6 +137,8 @@ def load_rules_and_profile(cur):
 
 def gu_programs(cur, gu):
     """선택 자치구에서 시행 중인(또는 서울전체) 제도 + 코드 배열까지 ADB에서."""
+    if USE_LOCAL:
+        return _LS.gu_programs(cur, gu)
     cur.execute("""
         SELECT JSON_VALUE(DATA,'$.program_id'), JSON_VALUE(DATA,'$.name'),
                JSON_VALUE(DATA,'$.access_mode'), JSON_VALUE(DATA,'$.gender'),
@@ -154,6 +167,8 @@ def gu_programs(cur, gu):
 def transplant(cur, need_id, gu, q):
     """★ 그래프 추론: fulfills∋need AND 그 자치구 미시행 AND 선택Q 무충돌(낙인/의존).
        FULFILLS_E·IN_REGION_E·STIMULATES_E·SENSITIVE_E·DEEPENS_E·VULNERABLE_E 조인."""
+    if USE_LOCAL:
+        return _LS.transplant(cur, need_id, gu, q)
     cur.execute("""
         SELECT pv.program_id, pv.name, pv.region_scope
         FROM PROGRAM_V pv
@@ -173,6 +188,8 @@ def transplant(cur, need_id, gu, q):
 
 def fetch_meta(cur, ids):
     """이식후보 program_id들의 regions/rationale/evidence_ids/status를 ADB에서 일괄."""
+    if USE_LOCAL:
+        return _LS.fetch_meta(cur, ids)
     if not ids:
         return {}
     binds = {f"p{i}": pid for i, pid in enumerate(ids)}
@@ -193,6 +210,8 @@ def fetch_meta(cur, ids):
 # ── 보조 (논문 매칭 = 로컬, 팀원 로직 그대로) ───────────────────
 def load_evidence(cur):
     """근거논문 = ADB EVIDENCE 테이블에서 (적재: load_evidence_to_adb.py)."""
+    if USE_LOCAL:
+        return _LS.load_evidence(cur)
     cur.execute("SELECT DATA FROM EVIDENCE")
     return [_as_json(r[0]) for r in cur.fetchall()]
 
